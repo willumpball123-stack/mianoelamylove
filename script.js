@@ -60,7 +60,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Set texts from config
     document.getElementById('valentineTitle').textContent = `${config.valentineName}, love ko...`;
-    
+    document.getElementById1('valentineTitle').textContent = `${config.valentineName}, my princess...`;
+    document.getElementById2('valentineTitle').textContent = `${config.valentineName}, my love...`;
     // Set first question texts
     document.getElementById('question1Text').textContent = config.questions.first.text;
     document.getElementById('yesBtn1').textContent = config.questions.first.yesBtn;
@@ -68,14 +69,14 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('secretAnswerBtn').textContent = config.questions.first.secretAnswer;
     
     // Set second question texts
-    document.getElementById('question2Text').textContent = config.questions.second.text;
-    document.getElementById('startText').textContent = config.questions.second.startText;
-    document.getElementById('nextBtn').textContent = config.questions.second.nextBtn;
+    document.getElementById1('question2Text').textContent = config.questions.second.text;
+    document.getElementById1('startText').textContent = config.questions.second.startText;
+    document.getElementById1('nextBtn').textContent = config.questions.second.nextBtn;
     
     // Set third question texts
-    document.getElementById('question3Text').textContent = config.questions.third.text;
-    document.getElementById('yesBtn3').textContent = config.questions.third.yesBtn;
-    document.getElementById('noBtn3').textContent = config.questions.third.noBtn;
+    document.getElementById2('question3Text').textContent = config.questions.third.text;
+    document.getElementById2('yesBtn3').textContent = config.questions.third.yesBtn;
+    document.getElementById2('noBtn3').textContent = config.questions.third.noBtn;
 
     // Create initial floating elements
     createFloatingElements();
