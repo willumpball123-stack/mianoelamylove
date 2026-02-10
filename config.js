@@ -1,4 +1,3 @@
-
 const CONFIG = {
    
     valentineName: "mia noela",
@@ -6,6 +5,15 @@ const CONFIG = {
     // The title that appears in the browser tab
     // You can use emojis! 💝 💖 💗 💓 💞 💕
     pageTitle: "Will You Be My Valentine? 💝",
+
+    // Background image
+    backgroundImage: {
+        enabled: true,                                          // Enable background image
+        url: "image.png",                                       // Path to your background image
+        opacity: 0.3,                                           // Image opacity (0.0-1.0, lower = more transparent)
+        repeat: "repeat",                                       // How image repeats: "repeat", "no-repeat", "repeat-x", "repeat-y"
+        size: "auto"                                            // Size: "cover", "contain", "auto", or specific size like "200px"
+    },
 
     // Floating emojis that appear in the background
     // Find more emojis at: https://emojipedia.org
@@ -50,6 +58,13 @@ const CONFIG = {
         emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
     },
 
+    // Redirect button (appears after they say "Yes!")
+    redirectButton: {
+        enabled: true,                                          // Enable redirect button
+        text: "Open Your Special Gift 🎁💝",                   // Button text
+        url: "https://www.iluvyou.app/valentine/5?d=eyJuYW1lIjoiTWlhIE5vZWxhIiwiZGF5cyI6NTgsImV4cGVyaWVuY2UiOiJ2YWxlbnRpbmUiLCJzdGVwcyI6eyJzdGVwMSI6eyJlbmFibGVkIjp0cnVlLCJzdWJ0aXRsZSI6IlRvIG15IGJlYXV0aWZ1bCBnaXJsZnJpZW5kIGFuZCBnb3JnZW91cyB3aWZlICJ9LCJzdGVwMiI6eyJlbmFibGVkIjp0cnVlfSwic3RlcDMiOnsiZW5hYmxlZCI6dHJ1ZSwiaGVhZGluZyI6Im15IHNvbGFjZSBhbmQgbXkgc29mdCBlbWJyYWNlIiwicGFyYWdyYXBoIjoiTmFzYXlvIGFuZyBwdXNvIGtvIn0sInN0ZXA0Ijp7ImltYWdlcyI6W10sImVuYWJsZWQiOnRydWV9LCJzdGVwNSI6eyJwcm9tcHQiOiJSVUIgUlVCIFJVQiIsImVuYWJsZWQiOnRydWUsInNjcmF0Y2hUZXh0Ijoid2lsbCB5b3UgcGxlYXNlIGJlIG15IHZhbGVudGluZSBtaWEgYmVsbGEgbm9lbGEifX0sIm11c2ljIjp7ImlkIjoiV292VUdiQmx6cUEiLCJ0eXBlIjoieW91dHViZSJ9fQ=="
+    },
+
     // Color scheme for the website
     // Use https://colorhunt.co or https://coolors.co to find beautiful color combinations
     colors: {
@@ -82,4 +97,4 @@ const CONFIG = {
 };
 
 // Don't modify anything below this line unless you know what you're doing
-window.VALENTINE_CONFIG = CONFIG; 
+window.VALENTINE_CONFIG = CONFIG;
